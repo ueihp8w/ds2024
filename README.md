@@ -9,6 +9,6 @@ Students are expected to:
 Student Info
 =========================
 
-* Student Name: USTH ICT1
-* Student ID: Not-Vietnamese
+* Student Name: Nguyen Quang Vinh
+* Student ID: BA11-103
 * Student Group ID: Not-for-now
