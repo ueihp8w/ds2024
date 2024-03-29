@@ -13,7 +13,7 @@ int main(int argc, char const* argv[])
     struct sockaddr_in address;
     int opt = 1;
     socklen_t addrlen = sizeof(address);
-    char buffer[1024] = {0};
+    char filename[1024] = {0};
     char* hello = "Hello from server";
 
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
@@ -48,13 +48,11 @@ int main(int argc, char const* argv[])
         perror("accept");
         exit(EXIT_FAILURE);
     }
-    valread = read(new_socket, buffer, 1024 - 1); 
-    printf("%s\n", buffer);
+    valread = read(new_socket, filename, 1024 - 1); 
+    printf("Recieved the filename: %s\n", filename);
 
-    char path[] = "/home/p8w/ds2024/";
-    char filename[500];
+    char path[] = "/home/p8w/ds2024/Labwork 1/";
     char fullpath[1000];
-    valread = read(new_socket, filename, 100);
     strcpy(fullpath, path);
     strcat(fullpath, filename);
     FILE* fp = fopen(fullpath, "r");
