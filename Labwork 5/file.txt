@@ -1,0 +1,8 @@
+/home/user/documents/file1.txt
+/home/user/projects/project1/src/main.cpp
+/var/log/syslog
+/etc/passwd
+/usr/bin/bash
+/home/user/downloads/image.jpg
+/tmp/temp_file.txt
+/home/user/projects/project2/data/data.csv
